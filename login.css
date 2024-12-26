@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f1f1f1;
+}   
+
+.logo{
+    display: flexbox;
+    position: relative;
+    top: -200px;
+    left: 250px;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #7b9985;
+    margin-bottom: 20px;
+}
+
+.formulary{
+    width: 100%;
+    max-width: 350px;
+    background: #fff;
+    padding: 100px;
+    border-radius: 5px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+}
+
+.formulary h1{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.formulary .inputBox{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.formulary  .username, .password {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    background: transparent;
+}
+
+.button{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover{
+    background: #7b9985;
+}
+
+.button-register{
+    position: relative;
+    bottom:  -250px;
+    right: 250px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
