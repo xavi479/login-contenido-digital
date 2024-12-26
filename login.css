@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -10,50 +11,55 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f1f1f1;
+    background-image: url(/img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }   
 
 .logo{
-    display: flexbox;
-    position: relative;
-    top: -200px;
-    left: 250px;
+    display: grid;
+    position: absolute;
+    top: 5%;
+    left: 10%;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
     font-weight: 600;
-    color: #7b9985;
-    margin-bottom: 20px;
+    color: #740f0ff7;
+    margin: 20px 0 20px 20px;
+    text-shadow: 0px 40px 50px #0d0c0cfe, -2px -3px 0px #0e0101;
+    cursor: pointer;
 }
+
+.logo{
+    font-family: "Rubik Mono One", serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-text-stroke: #333;
+}
+
 
 .formulary{
     width: 100%;
     max-width: 350px;
-    background: #fff;
+    background: #f8f7f760;
     padding: 100px;
     border-radius: 5px;
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
 }
 
-.formulary h1{
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 20px;
-    color: #333;
-}
 
-.formulary .inputBox{
-    position: relative;
-    margin-bottom: 30px;
-}
 
 .formulary  .username, .password {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
     color: #333;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    font-weight: 300;  
     border: none;
     border-bottom: 1px solid #333;
     outline: none;
@@ -79,8 +85,7 @@ body {
 .button-register{
     position: relative;
     bottom:  -250px;
-    right: 250px;
-    width: 100%;
+    right: 220px;
     padding: 10px;
     font-size: 16px;
     color: #fff;
@@ -89,4 +94,17 @@ body {
     border-radius: 5px;
     cursor: pointer;
     outline: none;
+    text-decoration: none;
 }
+
+.button-register:hover{
+    background-color: #7b9985;
+}
+
+
+
+
+
+
+
+

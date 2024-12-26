@@ -3,16 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
     <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+   
 </head>
 <body>
-    <h1 class="logo">LOGIN</h1>
+
+
+    <h1 class="logo">PlayNest...</h1>
     <form class="formulary" action="login" method="post">
-        <input  class="username" type="text" name="username" placeholder="Username" required>
+        <input class="username" type="text" name="username" placeholder="Username" required>
         <input class="password" type="password" name="password" placeholder="Password" required>
         <button class="button"type="submit" >Login</button>
     </form>
-    <a href="register.html" class="button-register" >Register</a>
+    
+    
+    <div class="register">
+        <button class="button-register" onclick="toggleRegisterForm()">Register</button>
+        <div id="registerForm" style="display: none;">
+            <form action="register" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="cine.js"></script>
+
 </body>
 </html>
