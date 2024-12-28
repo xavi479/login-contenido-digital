@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1>Register</h1>
+    <nav>
+      <ul>
+         <button class="btn"><a href="login.html">Iniciar sesión</a>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+
+    
+    <button class="button-register" onclick="toggleRegisterForm()">Register</button>
+   <article id="registerForm" style="display: none;">
+        <form action="register" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <button type="submit">Register</button>
+        </form>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2021</p>
+  </footer>
+
+  <script src="cine.js"></script>
+</body>
+
+</html>
