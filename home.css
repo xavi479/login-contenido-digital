@@ -1,0 +1,185 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  /*outline: 2px solid red;*/
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, rgb(49, 15, 117), rgb(0, 0, 0));
+}
+
+img{
+  position: absolute;
+  top: -10%;
+  width: 100%;
+  height: 110%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.2);
+}
+
+.linea{
+  position: absolute;
+  top: 95%;
+  width: 99.8%;
+  height: 3.25rem;
+  clip-path: ellipse(60% 100%  at top);
+}
+
+.logo{
+  color: #ffd900;
+  display: grid;
+  position: relative;
+  left: 5%;
+  justify-content:baseline;
+  width: 95%;
+  font-family: "Train One", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.logo:hover{
+  color: #fff;
+  transition: 1s;
+}
+
+.logo-film{
+  color: #FF004D;
+  font-family: "Train One", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+}
+
+.menu{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1.5%;
+  right: 5%;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.menu a{
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  margin: 0 10px;
+  font-size: 20px;
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+}
+
+.menu li{
+  list-style: none;  
+  font-size: 35px;
+}
+
+.btn{
+  background-color: #de5419;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.btn:hover{
+  background-color: #f0703a;
+  color: white;
+}
+
+.btn a{
+  text-decoration: none;
+  color: rgb(246, 246, 246);
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+.container-data{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 89vh;
+}
+
+
+.container-data h2{
+  position: absolute;
+  top: 25%;
+  color: #ffd900;
+  font-size: 50px;
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  text-align: center;
+}
+
+.container-data p{
+  position: absolute;
+  top: 40%;
+  width: 400px;
+  color: #ffd900;
+  font-size: 30px;
+  justify-content: justify;
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  text-align: center;
+}
+
+.formulary-data{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20%;
+}
+
+.formulary-data input{
+  background-color: rgba(10, 10, 10, 0.595);
+  color: white;
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+  border: 2px solid #de5419;
+}
+
+.formulary-data button{
+  width: 100px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin: 5px;
+  background-color: #de5419;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.formulary-data button:hover{
+  background-color: #f0703a;
+}
+

@@ -1,30 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="import" href="login.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&family=Train+One&display=swap"
+    rel="stylesheet">
   <link rel="import" href="register.html">
+  <link rel="stylesheet" href="home.css">
   <title>Home</title>
 </head>
+
 <body>
-  <header>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="register.html">Register</a></li>
+  <header class="container">
+    <div class="logo-film">
+      <h1 class="logo">LaOz.Film</h1>
+    </div>
+    <!--<a href="/home.html" class="logo"><img src="/img/logoFilm1-Photoroom.png" alt="logo-cine"></a> -->
+    <nav class="menu-container">
+      <ul class="menu">
+        <li><button class="btn"><a href="/login.html">inicio de sesión</a></li></button>
+        <li><button class="btn"><a href="register.html">Unirse ahora</a></li></button>
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="container-data">
+    <img src="/img/fondo-home-pelis.jpg" alt="fondo-home-pelis">
+    
     <h2>Welcome to our site!</h2>
     <p>Here you can find all the movies and TV shows you want to watch.</p>
+    <article class="formulary-data">
+      <form action="">
+        <label for="email"></label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <button class="btn-data" type="button">comenzar</button>
+      </form>
+    </article>
   </main>
+  <img class="linea" src="/img/linea.jpg" alt="">
+  <article class="movies-series">
+  <section class="container-series">
+    <h2>Popular series</h2>
+    <section class="series">
+      <div class="serie">
+        <img src="img/stranger-things.jpg" alt="stranger-things">
+        <h3>Stranger Things</h3>
+      </div>
+      <div class="serie">
+        <img src="img/stranger-things.jpg" alt="stranger-things">
+        <h3>Stranger Things</h3>
+      </div>
+      <div class="serie">
+        <img src="img/stranger-things.jpg" alt="stranger-things">
+        <h3>Stranger Things</h3>
+      </div>
+      <div class="serie">
+        <img src="img/stranger-things.jpg" alt="stranger-things">
+        <h3>Stranger Things</h3>
+      </div>
+    </section>
+  </section>
+  <article class="container-movies">
+    <h2>Popular movies</h2>
+    <section class="movies">
+      <div class="movie">
+        <img src="img/avengers.jpg" alt="avengers">
+        <h3>Avengers</h3>
+      </div>
+      <div class="movie">
+        <img src="img/avengers.jpg" alt="avengers">
+        <h3>Avengers</h3>
+      </div>
+      <div class="movie">
+        <img src="img/avengers.jpg" alt="avengers">
+        <h3>Avengers</h3>
+      </div>
+      <div class="movie">
+        <img src="img/avengers.jpg" alt="avengers">
+        <h3>Avengers</h3>
+      </div>
+    </section>
+  </article>
+  </article>
+
   <footer>
     <p>&copy; 2021</p>
   </footer>
 
+
   <script src="cine.js"></script>
 </body>
+
 </html>
