@@ -167,7 +167,7 @@ img{
 }
 
 .formulary-data button{
-  width: 100px;
+  width: 150px;
   height: 45px;
   border-radius: 5px;
   border: none;
@@ -179,7 +179,20 @@ img{
   font-size: 20px;
 }
 
+.formulary-data button, strong{
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
 .formulary-data button:hover{
   background-color: #f0703a;
 }
+
+.error {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
+
 
