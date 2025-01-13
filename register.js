@@ -1,9 +1,16 @@
-// Obtener el parámetro de la URL
-const urlParams = new URLSearchParams(window.location.search);
-const emailParam = urlParams.get('email');
+document.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const emailParam = urlParams.get('email');
 
-// Poner el correo en el campo de entrada si existe
-if (emailParam) {
-  const emailInput = document.querySelector('#emailInput');
-  emailInput.value = decodeURIComponent(emailParam);
-}
+  if (emailParam) {
+    const registerForm = document.querySelector('#registerForm');
+    registerForm.style.display = 'block'; // Mostrar el formulario
+
+    const emailInput = document.querySelector('#emailInput');
+    if (emailInput) {
+      emailInput.value = decodeURIComponent(emailParam);
+    } else {
+      console.error('No se encontró el campo de correo "emailInput".');
+    }
+  }
+});

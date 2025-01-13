@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="import" href="home.html">
   <title>Document</title>
 </head>
 
@@ -23,9 +24,10 @@
     <button class="button-register" onclick="toggleRegisterForm()">Register</button>
    <article id="registerForm" style="display: none;">
         <form action="register" method="post">
+            <input type="email" name="email" id="emailInput" placeholder="Email" required>
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
-            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="password" name="password2" placeholder="Confirm password" required>
             <button type="submit">Register</button>
         </form>
     </article>

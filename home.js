@@ -1,23 +1,3 @@
-/*const btnData = document.querySelector('#btnData');
-const email = document.querySelector('#email');
-const emailInput = document.querySelector('#emailInput');
-
-
-btnData.addEventListener('click', () => {
-  if (email.value.trim() !== '') {
-    console.log(`Correo creado para: ${email.value}`);
-    window.location.href = `register.html?email=${encodeURIComponent(email.value)}`;
-  } email.placeholder = 'Email is required';
-  email.focus();
-}
-);
-
-emailInput.addEventListener(  'keyup', (event) => { 
-  if (event.key === 'Enter') {
-    btnData.click();
-  }
-});*/
-
 const btnData = document.querySelector('#btnData');
 const email = document.querySelector('#email');
 const emailInput = document.querySelector('#emailInput');
@@ -31,6 +11,7 @@ const isValidEmail = (email) => {
 // Evento para el botón btnData
 btnData.addEventListener('click', () => {
   const emailValue = email.value.trim();
+  console.log(`Email ingresado: ${emailValue}`); // Depuración
 
   // Verificar si el campo está vacío
   if (emailValue === '') {
@@ -49,6 +30,7 @@ btnData.addEventListener('click', () => {
   }
 
   // Redirigir a la página de registro si todo es válido
+  console.log('Redirigiendo a register.html...');
   window.location.href = `register.html?email=${encodeURIComponent(emailValue)}`;
 });
 
@@ -59,7 +41,8 @@ email.addEventListener('input', () => {
 });
 
 // Evento para detectar Enter en el campo emailInput
-emailInput.addEventListener('keyup', (event) => {
+email.addEventListener('keyup', (event) => {
+  /*console.log(event.key);*/
   if (event.key === 'Enter') {
     btnData.click();
   }
