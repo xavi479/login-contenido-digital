@@ -42,9 +42,10 @@ email.addEventListener('input', () => {
 
 // Evento para detectar Enter en el campo emailInput
 email.addEventListener('keyup', (event) => {
-  /*console.log(event.key);*/
+  console.log("Tecla presionada:", event.key);
   if (event.key === 'Enter') {
     btnData.click();
+    console.log('Detectado Enter');
   }
 });
 
