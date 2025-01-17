@@ -8,21 +8,25 @@
     <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&family=Train+One&display=swap"
+        rel="stylesheet">
     <link rel="import" href="home.html">
     <link rel="import" href="register.html">
 </head>
 
 <body>
 
-    <header class="encabezado">
-        <a href="/home.html"><img src="/img/logoFilm1-Photoroom.png" alt="logo-cine"></a>
-    
-        <p>Todo lo que hay para ver</p>
+    <header class="container">
+        <div class="logo-film">
+            <h1 class="logo">LaOz.Film</h1>
+        </div>
+
+        <p>¡Todo lo que hay para ver!</p>
         <nav class="menu">
             <ul>
                 <li>
-                    <button class="btn"><a href="/register.html" >Unirme ahora</a></button>
+                    <!--<a href="/register.html" ><button>Unirme ahora</button></a>
                   <!--<button class="btn"><a href="login.html">Iniciar sesión</a></button>-->
                 </li>
             </ul>
@@ -30,25 +34,33 @@
     </header>
 
     <main class="container-data">
-        <h2>Bienvenido a nuestro sitio!</h2>
-        <p>Aquí puedes encontrar todas las películas y series que quieras ver.</p>
+        <img src="/img/fondo-home-pelis.jpg" alt="fondo-home-pelis">
+        <article id="container-login">
+            <h2>Login</h2>
+            <form class="formulary" action="login" method="post">
+                <input class="username" type="text" name="username" placeholder="Username" required>
+                <input class="password" type="password" name="password" placeholder="Password" required>
+                <button class="button1" type="submit">Login</button>
+                <p>o</p>
+                <button class="button2" type="button">Usar un codigo de inicio</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
 
-    </main>
+                <div class="container" style="background-color:#f1f1f1">
 
-    <article id="container-login">
-        <h2>Login</h2>
-        <form class="formulary" action="login" method="post">
-            <input class="username" type="text" name="username" placeholder="Username" required>
-            <input class="password" type="password" name="password" placeholder="Password" required>
-            <button class="button" type="submit">Login</button>
-        </form>
-    </article>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
 
-    <footer>
-        <p>&copy; 2021</p>
+                <span class="psw">¿Primera vez en LaOz.Fillm? <a href="register.html">Unirme ahora</a></span>
+            </form>
+        </article>
 
-    <script src="cine.js"></script>
-    <script src="home.html"></script>
+        <footer>
+            <p>&copy; 2021</p>
+
+            <script src="cine.js"></script>
+            <script src="home.html"></script>
 
 </body>
 
