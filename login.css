@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    /*box-sizing: border-box;*/
 }
 
 body {
@@ -19,7 +18,7 @@ img {
     height: 110%;
     object-fit: cover;
     z-index: -1;
-    filter: brightness(0.2);
+    filter: brightness(0.6);
 }
 
 .logo {
@@ -52,48 +51,14 @@ img {
     top: 10px;
 }
 
-.button1 {
-    background-color: #de5419;
-    border-radius: 5px;
-    padding: 15px;
-    cursor: pointer;
-    margin: 0px;
-    width: 103%;
-    text-decoration: none;
-    color: rgb(246, 246, 246);
-    font-family: "Orbitron", serif;
-    font-size: 15px;
-    font-weight: weight;
-    font-style: normal;
-}
-
-.button2 {
-    background-color: #de5419;
-    border-radius: 5px;
-    padding: 15px;
-    cursor: pointer;
-    margin: 0px;
-    width: 103%;
-    text-decoration: none;
-    color: rgb(246, 246, 246);
-    font-family: "Orbitron", serif;
-    font-size: 15px;
-    font-weight: weight;
-    font-style: normal;
-}
-
-.button:hover {
-    background-color: #f0703a;
-    color: white;
-}
-
 .formulary {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 40%;
     width: 100%;
-    max-width: 250px;
-    background: #f8f7f73a;
+    max-width: 300px;
+    height: 68%;
+    background: #0e0d0dda;
     padding: 50px;
     border-radius: 5px;
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
@@ -103,9 +68,9 @@ img {
 .password {
     width: 90%;
     padding: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Orbitron", serif;
     font-size: 15px;
-    color: #0f0e0e;
+    color: #f6e4e4;
     letter-spacing: 1px;
     margin-bottom: 30px;
     font-weight: 400;
@@ -113,10 +78,95 @@ img {
     border-radius: 5px;
     border-bottom: 2px 2px solid #333333;
     outline: none;
-    background:rgba(41, 40, 40, 0.405);
+    background:rgba(5, 5, 5, 0.405);
+}
+
+.password{
+    font-size: 20px;
+}
+.button1 {
+    position: relative;
+    left: -10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+    background-color: #de5419;
+    color: white;
+    cursor: pointer;
+    font-family: "Orbitron", serif;
+}
+
+.button1:hover{
+    background-color: #b3826d;
+}
+
+.or{
+    color: #ece1dd;
+    position: relative;
+    left: 45%;
+    padding: 15px;
+    font-size: 20px;
+    font-family:"Orbitron", serif;
 }
 
 
-.button:hover {
-    background: #7b9985;
+.button2 {
+    position: relative;
+    left: -10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+    background-color: #83828158;
+    color: white;
+    cursor: pointer;
+    font-family: "Orbitron", serif;
 }
+.button2:hover{
+    background-color: #de5419;
+}
+
+.checkbox{
+    display: block;
+    color: #ece1dd;
+    position: relative;
+    top: 10px;
+    padding: 5px;
+    font-family: "Orbitron", serif;
+    cursor: pointer;
+    
+}
+
+.checkbox input{
+    width: 40px;
+    max-width: 40px;
+    position: relative;
+    top: 1px;
+    transform: scale(1.5);
+}
+
+
+.psw {
+    display: block;
+    color: #ece1dd;
+    position: relative;
+    top: 35px;
+    padding: 20px;
+    font-family: "Orbitron", serif;
+}
+
+.psw a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.psw:hover a{
+    color: #FF004D;
+}
+
+
+
